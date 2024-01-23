@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@200;400;600&family=Quicksand:wght@700&family=Raleway:wght@600&display=swap');
+:root{
+    --lato: 'Lato', sans-serif;
+    --pop: 'Poppins', sans-serif;
+    --quick: 'Quicksand', sans-serif;
+    --rale: 'Raleway', sans-serif;
+    --orange: #FD9B10;
+    --bckground-color: #FFDDAC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bckground-color);
+}
+#container {
+    margin: 2% 7%;  /* adjust */
+    padding: 0.5% 5% 0;  
+    background-color: white;
+    box-shadow: 30px 30px 20px 0px rgba(148, 91, 10, 0.30);
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+.logo-text {
+    color: #000;
+    font-family: var(--quick);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.logo-text span {
+    color: var(--orange);
+    padding-right: 5px;
+}
+/* navs */
+a {
+    text-decoration: none;
+}
+ul {
+    display: flex;
+    gap: 60px;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    color: #000;
+    font-family: var(--lato);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav li span {
+    background-color: var(--bckground-color);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+/* socials */
+.socials {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.socials img {
+    width: 1.2rem;
+}
+
+/* hero-page */
+.hero-img-wrapper {
+    height: 55vh;
+    background-image: url('../images/Sleep\ dog.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-img-color {
+    height: 100%;
+    background-image: url('../images/sleepColor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero-img-color .hero-text {
+    width: 18%;
+    position: absolute;
+    right: 112px;
+    top: 15%;
+    color: white;
+    font-family: var(--pop);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.hero-img-color .hero-text span {
+    font-family: var(--rale);
+    font-size: 3rem;
+    font-weight: 600;
+}
+/* smaller hero-img */
+.hero-small-img {
+    position: relative;
+}
+.smaller-hero-img {  /* adjust if white is showing */
+    height: 30vh;     
+    position: relative;
+    margin-top: 20px;
+    direction: rtl;
+}
+.smaller-hero-img::before {
+    width: 85%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(253, 155, 16, 0.30) 0%, rgba(100, 112, 134, 0.30) 100%);
+}
+.smaller-hero-img img {
+    width: 85%;
+    height: 100%;
+    direction: left;
+    object-fit: cover;
+
+}
+.hero-small-img .box {
+    background-color: var(--orange);
+    width: 20%;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+}
+.hero-small-img .box-text {
+    position: absolute;
+    width: 25%;
+    height: 34vh;
+    background-color: white;
+    color: #000;
+    top: 0;
+    z-index: 2;
+    margin: -50px 0 0 12px;
+    padding: 3% 3%;
+}
+.box-text h4 {
+    font-family: var(--lato);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 8%;
+}
+.box-text p {
+    display: inline;
+    font-family: var(--lato);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.more {
+    color: var(--orange);
+    font-family: var(--lato);
+    font-size: 0.7.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.para-text .conth-text {
+    display: none;
+    padding-right: 10px;
+}
+.box-text a {
+    position: absolute;
+    right: 0;
+    bottom: 12%;
+    margin-right: -30px;
+    z-index: 3;
+    padding: 12px 17px;
+    background-color: var(--orange);
+    color: white;
+    font-family: var(--lato);
+    font-size: 0.7rem;
+    font-weight: 700;
+    border: none;
+}
+.para-text.show-more .conth-text {
+    display: inline;
+}
+.para-text.show-more .dots {
+    display: inline;
+}

@@ -1,0 +1,67 @@
+:root{
+    --lato: 'Lato', sans-serif;
+    --pop: 'Poppins', sans-serif;
+    --quick: 'Quicksand', sans-serif;
+    --rale: 'Raleway', sans-serif;
+    --orange: #FD9B10;
+    --bckground-color: #FFDDAC;
+}
+
+.charity-section {
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    gap: 5%;
+    margin: 40px auto 0;
+    border-radius: 7px;
+    background-color: #e6e3e3;
+}
+.charity-text {
+    width: 45%;
+}
+.inner-charity-text {
+    width: 80%;
+    margin: 30% auto 0;
+}
+.inner-charity-text h3 {
+    font-family: var(--lato);
+    font-size: 1.5rem;
+}
+.inner-charity-text h3 span {
+    display: block;
+    margin: 5px 0 10px;
+    color: var(--orange);
+}
+.inner-charity-text hr {
+    width: 20%;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+.inner-charity-text .s-text {
+    font-family: var(--pop);
+    font-size: .7rem;
+}
+.inner-charity-text .quote {
+    margin: 15px 0;
+    font-family: var(--pop);
+    font-size: 1rem;
+}
+button {
+    padding: 7px;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+/* image */
+.random-imgs {
+    width: 50%;
+}
+.charity-rand-img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
