@@ -10,11 +10,11 @@ This website was built with HTML, vanilla CSS and JavaScript. It was built to te
 
 The project was hosted on netlify.
 
-Link to the hosted page here => [Link here](https://elegant-smakager-de049c.netlify.app/)
+Link to the hosted page here -> [Link here](https://stirring-melomakarona-6e18a9.netlify.app/)
 
 ## Project Demo
 
-![Dog arena landing page](https://drive.google.com/file/d/1_LiPYlbPXcBL8HVuvp3e8MNhhoCXDZ-a/view?usp=drivesdk)
+![Dog arena landing page](./images/Dog%20arena%20pix~2.png)
 
 
 **Have Viewing!** 🚀
